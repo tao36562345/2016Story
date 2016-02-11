@@ -92,13 +92,27 @@
                                               otherButtonTitles:nil, nil];
         [alert show];
     } else {
-        // todo 先了解KeychainItemWrapper
+        KeychainItemWrapper *keychain = [[KeychainItemWrapper alloc] initWithIdentifier:@"YDAPPNAME"
+                                                                            accessGroup:nil];
+        [keychain setObject:nameField.text
+                     forKey:(__bridge id)kSecAttrAccount];
+        [keychain setObject:[passwordField.text MD5]
+                     forKey:(__bridge id)kSecValueData];
+        
+        // reading back a value from the keychain for comparison
+        // get username [keychain objectForKey:(__bridge id)kSecAttrAccount]);
+        // get password [keychain objectForKey:(__bridge id)kSecValueData]);
+        [YDConfigurationHelper setBoolValueForConfigurationKey:bYDRegistered
+                                                     withValue:YES];
+        [self.delegate registeredWithSuccess];
+        // or
+//        [self.delegate registeredWithError];
     }
 }
 
 - (void)cancelRegistration:(UIButton *)sender
 {
-    
+    [self.delegate cancelRegistration];
 }
 
 @end

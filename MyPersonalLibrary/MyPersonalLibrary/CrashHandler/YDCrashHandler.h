@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YDCrashHandler : NSObject
+@interface YDCrashHandler : NSObject {
+    BOOL dismissed;
+}
 
+void InstallCrashExceptionHandler();
 @end

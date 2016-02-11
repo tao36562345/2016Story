@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061F6AD31C6B36010022067C /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F6AD21C6B36010022067C /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		061F6AD61C6B3E040022067C /* YDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F6AD51C6B3E040022067C /* YDLoginViewController.m */; };
+		061F6AD91C6B57970022067C /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F6AD81C6B57970022067C /* NSString+MD5.m */; };
+		061F6ADC1C6B5AB80022067C /* YDCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F6ADB1C6B5AB80022067C /* YDCrashHandler.m */; };
 		06F0C0A21C61CD4C00DB032D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0C0A11C61CD4C00DB032D /* main.m */; };
 		06F0C0A51C61CD4C00DB032D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0C0A41C61CD4C00DB032D /* AppDelegate.m */; };
 		06F0C0A81C61CD4C00DB032D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0C0A71C61CD4C00DB032D /* ViewController.m */; };
@@ -19,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		061F6AD11C6B36010022067C /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		061F6AD21C6B36010022067C /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		061F6AD41C6B3E040022067C /* YDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDLoginViewController.h; sourceTree = "<group>"; };
+		061F6AD51C6B3E040022067C /* YDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDLoginViewController.m; sourceTree = "<group>"; };
+		061F6AD71C6B57970022067C /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		061F6AD81C6B57970022067C /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		061F6ADA1C6B5AB80022067C /* YDCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCrashHandler.h; sourceTree = "<group>"; };
+		061F6ADB1C6B5AB80022067C /* YDCrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDCrashHandler.m; sourceTree = "<group>"; };
 		06F0C09D1C61CD4C00DB032D /* MyPersonalLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPersonalLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F0C0A11C61CD4C00DB032D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		06F0C0A31C61CD4C00DB032D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,10 +62,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06F0C0941C61CD4C00DB032D = {
+		061F6ACF1C6B35460022067C /* libs */ = {
 			isa = PBXGroup;
 			children = (
 				06F0C0CD1C62045E00DB032D /* Security.framework */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		061F6AD01C6B36010022067C /* keychain */ = {
+			isa = PBXGroup;
+			children = (
+				061F6AD11C6B36010022067C /* KeychainItemWrapper.h */,
+				061F6AD21C6B36010022067C /* KeychainItemWrapper.m */,
+			);
+			path = keychain;
+			sourceTree = "<group>";
+		};
+		06F0C0941C61CD4C00DB032D = {
+			isa = PBXGroup;
+			children = (
 				06F0C09F1C61CD4C00DB032D /* MyPersonalLibrary */,
 				06F0C09E1C61CD4C00DB032D /* Products */,
 			);
@@ -93,6 +121,7 @@
 		06F0C0A01C61CD4C00DB032D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				061F6ACF1C6B35460022067C /* libs */,
 				06F0C0A11C61CD4C00DB032D /* main.m */,
 				06F0C0C91C61DA3400DB032D /* MyPersonalLibrary-Prefix.pch */,
 			);
@@ -102,6 +131,8 @@
 		06F0C0BE1C61CEFC00DB032D /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				061F6AD71C6B57970022067C /* NSString+MD5.h */,
+				061F6AD81C6B57970022067C /* NSString+MD5.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -109,6 +140,8 @@
 		06F0C0BF1C61CEFC00DB032D /* CrashHandler */ = {
 			isa = PBXGroup;
 			children = (
+				061F6ADA1C6B5AB80022067C /* YDCrashHandler.h */,
+				061F6ADB1C6B5AB80022067C /* YDCrashHandler.m */,
 			);
 			path = CrashHandler;
 			sourceTree = "<group>";
@@ -124,6 +157,7 @@
 		06F0C0C11C61CEFC00DB032D /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				061F6AD01C6B36010022067C /* keychain */,
 			);
 			path = Externals;
 			sourceTree = "<group>";
@@ -149,6 +183,8 @@
 			children = (
 				06F0C0CA1C61EE0E00DB032D /* YDRegistrationViewController.h */,
 				06F0C0CB1C61EE0E00DB032D /* YDRegistrationViewController.m */,
+				061F6AD41C6B3E040022067C /* YDLoginViewController.h */,
+				061F6AD51C6B3E040022067C /* YDLoginViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -225,7 +261,11 @@
 			files = (
 				06F0C0A81C61CD4C00DB032D /* ViewController.m in Sources */,
 				06F0C0A51C61CD4C00DB032D /* AppDelegate.m in Sources */,
+				061F6AD91C6B57970022067C /* NSString+MD5.m in Sources */,
+				061F6AD31C6B36010022067C /* KeychainItemWrapper.m in Sources */,
+				061F6AD61C6B3E040022067C /* YDLoginViewController.m in Sources */,
 				06F0C0A21C61CD4C00DB032D /* main.m in Sources */,
+				061F6ADC1C6B5AB80022067C /* YDCrashHandler.m in Sources */,
 				06F0C0C81C61D44F00DB032D /* YDConfigurationHelper.m in Sources */,
 				06F0C0CC1C61EE0E00DB032D /* YDRegistrationViewController.m in Sources */,
 			);
@@ -380,6 +420,7 @@
 				06F0C0B61C61CD4C00DB032D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
