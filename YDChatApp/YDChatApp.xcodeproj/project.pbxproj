@@ -14,6 +14,20 @@
 		06545F6C1C70280F00F4F46E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06545F6A1C70280F00F4F46E /* LaunchScreen.storyboard */; };
 		06545F761C702A0E00F4F46E /* YDChatData.m in Sources */ = {isa = PBXBuildFile; fileRef = 06545F751C702A0E00F4F46E /* YDChatData.m */; };
 		06545F791C707C3000F4F46E /* YDChatTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06545F781C707C3000F4F46E /* YDChatTableView.m */; };
+		06B50F5D1C7179190009C888 /* YDChatHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B50F5C1C7179190009C888 /* YDChatHeaderTableViewCell.m */; };
+		06B50F601C717B7C0009C888 /* YDChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B50F5F1C717B7C0009C888 /* YDChatTableViewCell.m */; };
+		06B50F631C71819E0009C888 /* YDChatUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B50F621C71819E0009C888 /* YDChatUser.m */; };
+		06B50F701C71AB900009C888 /* eiffeltower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06B50F651C71AB900009C888 /* eiffeltower.jpg */; };
+		06B50F711C71AB900009C888 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B50F661C71AB900009C888 /* Icon.png */; };
+		06B50F721C71AB900009C888 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B50F671C71AB900009C888 /* Icon@2x.png */; };
+		06B50F731C71AB900009C888 /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B50F681C71AB900009C888 /* me.png */; };
+		06B50F741C71AB900009C888 /* me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B50F691C71AB900009C888 /* me@2x.png */; };
+		06B50F751C71AB900009C888 /* mebubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B50F6A1C71AB900009C888 /* mebubble.png */; };
+		06B50F761C71AB900009C888 /* mebubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B50F6B1C71AB900009C888 /* mebubble@2x.png */; };
+		06B50F771C71AB900009C888 /* metyping.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B50F6C1C71AB900009C888 /* metyping.png */; };
+		06B50F781C71AB900009C888 /* metyping@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B50F6D1C71AB900009C888 /* metyping@2x.png */; };
+		06B50F791C71AB900009C888 /* noavatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B50F6E1C71AB900009C888 /* noavatar.png */; };
+		06B50F7A1C71AB900009C888 /* noavatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B50F6F1C71AB900009C888 /* noavatar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +45,23 @@
 		06545F751C702A0E00F4F46E /* YDChatData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChatData.m; sourceTree = "<group>"; };
 		06545F771C707C3000F4F46E /* YDChatTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChatTableView.h; sourceTree = "<group>"; };
 		06545F781C707C3000F4F46E /* YDChatTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChatTableView.m; sourceTree = "<group>"; };
+		06B50F5B1C7179190009C888 /* YDChatHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChatHeaderTableViewCell.h; sourceTree = "<group>"; };
+		06B50F5C1C7179190009C888 /* YDChatHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChatHeaderTableViewCell.m; sourceTree = "<group>"; };
+		06B50F5E1C717B7C0009C888 /* YDChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChatTableViewCell.h; sourceTree = "<group>"; };
+		06B50F5F1C717B7C0009C888 /* YDChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChatTableViewCell.m; sourceTree = "<group>"; };
+		06B50F611C71819E0009C888 /* YDChatUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDChatUser.h; sourceTree = "<group>"; };
+		06B50F621C71819E0009C888 /* YDChatUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDChatUser.m; sourceTree = "<group>"; };
+		06B50F651C71AB900009C888 /* eiffeltower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eiffeltower.jpg; sourceTree = "<group>"; };
+		06B50F661C71AB900009C888 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		06B50F671C71AB900009C888 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		06B50F681C71AB900009C888 /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me.png; sourceTree = "<group>"; };
+		06B50F691C71AB900009C888 /* me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me@2x.png"; sourceTree = "<group>"; };
+		06B50F6A1C71AB900009C888 /* mebubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mebubble.png; sourceTree = "<group>"; };
+		06B50F6B1C71AB900009C888 /* mebubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mebubble@2x.png"; sourceTree = "<group>"; };
+		06B50F6C1C71AB900009C888 /* metyping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metyping.png; sourceTree = "<group>"; };
+		06B50F6D1C71AB900009C888 /* metyping@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metyping@2x.png"; sourceTree = "<group>"; };
+		06B50F6E1C71AB900009C888 /* noavatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noavatar.png; sourceTree = "<group>"; };
+		06B50F6F1C71AB900009C888 /* noavatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noavatar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +94,7 @@
 		06545F5B1C70280F00F4F46E /* YDChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				06B50F641C71AB900009C888 /* images */,
 				06545F5F1C70280F00F4F46E /* AppDelegate.h */,
 				06545F601C70280F00F4F46E /* AppDelegate.m */,
 				06545F621C70280F00F4F46E /* ViewController.h */,
@@ -73,6 +105,12 @@
 				06545F751C702A0E00F4F46E /* YDChatData.m */,
 				06545F771C707C3000F4F46E /* YDChatTableView.h */,
 				06545F781C707C3000F4F46E /* YDChatTableView.m */,
+				06B50F5B1C7179190009C888 /* YDChatHeaderTableViewCell.h */,
+				06B50F5C1C7179190009C888 /* YDChatHeaderTableViewCell.m */,
+				06B50F5E1C717B7C0009C888 /* YDChatTableViewCell.h */,
+				06B50F5F1C717B7C0009C888 /* YDChatTableViewCell.m */,
+				06B50F611C71819E0009C888 /* YDChatUser.h */,
+				06B50F621C71819E0009C888 /* YDChatUser.m */,
 			);
 			path = YDChatApp;
 			sourceTree = "<group>";
@@ -86,6 +124,24 @@
 				06545F5D1C70280F00F4F46E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06B50F641C71AB900009C888 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				06B50F651C71AB900009C888 /* eiffeltower.jpg */,
+				06B50F661C71AB900009C888 /* Icon.png */,
+				06B50F671C71AB900009C888 /* Icon@2x.png */,
+				06B50F681C71AB900009C888 /* me.png */,
+				06B50F691C71AB900009C888 /* me@2x.png */,
+				06B50F6A1C71AB900009C888 /* mebubble.png */,
+				06B50F6B1C71AB900009C888 /* mebubble@2x.png */,
+				06B50F6C1C71AB900009C888 /* metyping.png */,
+				06B50F6D1C71AB900009C888 /* metyping@2x.png */,
+				06B50F6E1C71AB900009C888 /* noavatar.png */,
+				06B50F6F1C71AB900009C888 /* noavatar@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +202,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06B50F741C71AB900009C888 /* me@2x.png in Resources */,
+				06B50F711C71AB900009C888 /* Icon.png in Resources */,
+				06B50F771C71AB900009C888 /* metyping.png in Resources */,
+				06B50F781C71AB900009C888 /* metyping@2x.png in Resources */,
 				06545F6C1C70280F00F4F46E /* LaunchScreen.storyboard in Resources */,
+				06B50F701C71AB900009C888 /* eiffeltower.jpg in Resources */,
+				06B50F731C71AB900009C888 /* me.png in Resources */,
+				06B50F791C71AB900009C888 /* noavatar.png in Resources */,
+				06B50F761C71AB900009C888 /* mebubble@2x.png in Resources */,
+				06B50F751C71AB900009C888 /* mebubble.png in Resources */,
+				06B50F7A1C71AB900009C888 /* noavatar@2x.png in Resources */,
 				06545F691C70280F00F4F46E /* Assets.xcassets in Resources */,
+				06B50F721C71AB900009C888 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,9 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06B50F601C717B7C0009C888 /* YDChatTableViewCell.m in Sources */,
 				06545F641C70280F00F4F46E /* ViewController.m in Sources */,
 				06545F611C70280F00F4F46E /* AppDelegate.m in Sources */,
+				06B50F631C71819E0009C888 /* YDChatUser.m in Sources */,
 				06545F761C702A0E00F4F46E /* YDChatData.m in Sources */,
+				06B50F5D1C7179190009C888 /* YDChatHeaderTableViewCell.m in Sources */,
 				06545F5E1C70280F00F4F46E /* main.m in Sources */,
 				06545F791C707C3000F4F46E /* YDChatTableView.m in Sources */,
 			);
@@ -265,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YDChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengtao.YDChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YDChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengtao.YDChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +373,7 @@
 				06545F721C70280F00F4F46E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

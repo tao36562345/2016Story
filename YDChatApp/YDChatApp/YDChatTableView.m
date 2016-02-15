@@ -148,7 +148,7 @@
     // Standard
     static NSString *cellId = @"ChatCell";
     YDChatTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    YDChatData *data = [[self.bubbleSection objectAtIndex:indexPath.section] objectForKey:indexPath.row - 1];
+    YDChatData *data = [[self.bubbleSection objectAtIndex:indexPath.section] objectAtIndex:indexPath.row - 1];
     if (cell == nil) {
         cell = [[YDChatTableViewCell alloc] init];
     }
