@@ -198,5 +198,33 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:CellIdentifier];
+    }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    YDSectionHeaderView *shv = (YDSectionHeaderView *)[self.arrayOfSectionHeaders objectAtIndex:indexPath.section];
+    YDCar *car = (YDCar *)[[self.dataDict objectForKey:shv.key] objectAtIndex:indexPath.row];
+    UILabel *carlbl = [[UILabel alloc] initWithFrame:CGRectMake(70, 0, 250, 60)];
+    carlbl.textColor = [UIColor blueColor];
+    carlbl.backgroundColor = [UIColor whiteColor];
+    carlbl.text = [NSString stringWithFormat:@"%@ %@", car.make, car.model];
+    [cell.contentView addSubview:carlbl];
+    
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
+    imgView.backgroundColor = [UIColor clearColor];
+    [imgView setImage:[UIImage imageNamed:car.imageName]];
+    imgView.contentMode = UIViewContentModeScaleAspectFit;
+    [cell.contentView addSubview:imgView];
+    
+    return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 @end

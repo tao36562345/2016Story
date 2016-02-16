@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0643B1751C72D23A008DC8B4 /* 2013f150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0643B16E1C72D23A008DC8B4 /* 2013f150.jpg */; };
+		0643B1761C72D23A008DC8B4 /* 2013superduty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0643B16F1C72D23A008DC8B4 /* 2013superduty.jpg */; };
+		0643B1771C72D23A008DC8B4 /* colorado.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0643B1701C72D23A008DC8B4 /* colorado.jpg */; };
+		0643B1781C72D23A008DC8B4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0643B1711C72D23A008DC8B4 /* Icon.png */; };
+		0643B1791C72D23A008DC8B4 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0643B1721C72D23A008DC8B4 /* Icon@2x.png */; };
+		0643B17A1C72D23A008DC8B4 /* shelbygt500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0643B1731C72D23A008DC8B4 /* shelbygt500.jpg */; };
+		0643B17B1C72D23A008DC8B4 /* suburban.png in Resources */ = {isa = PBXBuildFile; fileRef = 0643B1741C72D23A008DC8B4 /* suburban.png */; };
+		0643B17E1C72D400008DC8B4 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 0643B17C1C72D400008DC8B4 /* down.png */; };
+		0643B17F1C72D400008DC8B4 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 0643B17D1C72D400008DC8B4 /* up.png */; };
 		0686B38D1C71FAC1003DBEFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0686B38C1C71FAC1003DBEFF /* main.m */; };
 		0686B3901C71FAC1003DBEFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0686B38F1C71FAC1003DBEFF /* AppDelegate.m */; };
 		0686B3931C71FAC1003DBEFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0686B3921C71FAC1003DBEFF /* ViewController.m */; };
@@ -17,6 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0643B16E1C72D23A008DC8B4 /* 2013f150.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2013f150.jpg; sourceTree = "<group>"; };
+		0643B16F1C72D23A008DC8B4 /* 2013superduty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2013superduty.jpg; sourceTree = "<group>"; };
+		0643B1701C72D23A008DC8B4 /* colorado.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = colorado.jpg; sourceTree = "<group>"; };
+		0643B1711C72D23A008DC8B4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0643B1721C72D23A008DC8B4 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		0643B1731C72D23A008DC8B4 /* shelbygt500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shelbygt500.jpg; sourceTree = "<group>"; };
+		0643B1741C72D23A008DC8B4 /* suburban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suburban.png; sourceTree = "<group>"; };
+		0643B17C1C72D400008DC8B4 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		0643B17D1C72D400008DC8B4 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		0686B3881C71FAC0003DBEFF /* YDDrillDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDDrillDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0686B38C1C71FAC1003DBEFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0686B38E1C71FAC1003DBEFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0643B16D1C72D23A008DC8B4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0643B17C1C72D400008DC8B4 /* down.png */,
+				0643B17D1C72D400008DC8B4 /* up.png */,
+				0643B16E1C72D23A008DC8B4 /* 2013f150.jpg */,
+				0643B16F1C72D23A008DC8B4 /* 2013superduty.jpg */,
+				0643B1701C72D23A008DC8B4 /* colorado.jpg */,
+				0643B1711C72D23A008DC8B4 /* Icon.png */,
+				0643B1721C72D23A008DC8B4 /* Icon@2x.png */,
+				0643B1731C72D23A008DC8B4 /* shelbygt500.jpg */,
+				0643B1741C72D23A008DC8B4 /* suburban.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		0686B37F1C71FAC0003DBEFF = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +96,7 @@
 		0686B38A1C71FAC1003DBEFF /* YDDrillDown */ = {
 			isa = PBXGroup;
 			children = (
+				0643B16D1C72D23A008DC8B4 /* images */,
 				0686B38E1C71FAC1003DBEFF /* AppDelegate.h */,
 				0686B38F1C71FAC1003DBEFF /* AppDelegate.m */,
 				0686B3911C71FAC1003DBEFF /* ViewController.h */,
@@ -144,8 +179,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0643B1781C72D23A008DC8B4 /* Icon.png in Resources */,
+				0643B17E1C72D400008DC8B4 /* down.png in Resources */,
+				0643B1771C72D23A008DC8B4 /* colorado.jpg in Resources */,
+				0643B1791C72D23A008DC8B4 /* Icon@2x.png in Resources */,
+				0643B17B1C72D23A008DC8B4 /* suburban.png in Resources */,
 				0686B39B1C71FAC1003DBEFF /* LaunchScreen.storyboard in Resources */,
 				0686B3981C71FAC1003DBEFF /* Assets.xcassets in Resources */,
+				0643B17F1C72D400008DC8B4 /* up.png in Resources */,
+				0643B17A1C72D23A008DC8B4 /* shelbygt500.jpg in Resources */,
+				0643B1751C72D23A008DC8B4 /* 2013f150.jpg in Resources */,
+				0643B1761C72D23A008DC8B4 /* 2013superduty.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +343,7 @@
 				0686B3A11C71FAC1003DBEFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

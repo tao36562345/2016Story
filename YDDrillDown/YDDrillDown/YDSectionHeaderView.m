@@ -27,7 +27,7 @@
         self.key = title;
         
         UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height - 1)];
-        redView.backgroundColor = [UIColor redColor];
+        redView.backgroundColor = [UIColor lightGrayColor];
         [self addSubview:redView];
         
         // Create and configure the title label.
