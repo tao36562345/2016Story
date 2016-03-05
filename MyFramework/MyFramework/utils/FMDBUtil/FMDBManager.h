@@ -10,4 +10,9 @@
 
 @interface FMDBManager : NSObject
 
++ (instancetype)shareInstance;
+
+- (BOOL)executeUpdate:(NSString *)sql;
+
+- (BOOL)executeUpdate:(NSString *)sql withArgumentsInArray:(NSArray *)params;
 @end

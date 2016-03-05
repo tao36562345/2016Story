@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06806D611C8A83E500A4D6D6 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 06806D601C8A83E400A4D6D6 /* UserInfo.m */; };
+		06806D641C8A842B00A4D6D6 /* UserInfoDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 06806D631C8A842B00A4D6D6 /* UserInfoDao.m */; };
 		06FD48FD1C8938DF00DF16FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD48FC1C8938DF00DF16FB /* main.m */; };
 		06FD49001C8938DF00DF16FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD48FF1C8938DF00DF16FB /* AppDelegate.m */; };
 		06FD49031C8938DF00DF16FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD49021C8938DF00DF16FB /* ViewController.m */; };
@@ -17,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06806D5F1C8A83E400A4D6D6 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		06806D601C8A83E400A4D6D6 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		06806D621C8A842B00A4D6D6 /* UserInfoDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoDao.h; sourceTree = "<group>"; };
+		06806D631C8A842B00A4D6D6 /* UserInfoDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoDao.m; sourceTree = "<group>"; };
+		06806D661C8A8C5A00A4D6D6 /* MyFrameworkPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFrameworkPrefixHeader.pch; sourceTree = "<group>"; };
 		06FD48F81C8938DF00DF16FB /* MyFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06FD48FC1C8938DF00DF16FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		06FD48FE1C8938DF00DF16FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,6 +52,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06806D5D1C8A83C600A4D6D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06806D5E1C8A83C600A4D6D6 /* UserInfo */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06806D5E1C8A83C600A4D6D6 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				06806D5F1C8A83E400A4D6D6 /* UserInfo.h */,
+				06806D601C8A83E400A4D6D6 /* UserInfo.m */,
+				06806D621C8A842B00A4D6D6 /* UserInfoDao.h */,
+				06806D631C8A842B00A4D6D6 /* UserInfoDao.m */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
 		06FD48EF1C8938DF00DF16FB = {
 			isa = PBXGroup;
 			children = (
@@ -66,7 +92,8 @@
 		06FD48FA1C8938DF00DF16FB /* MyFramework */ = {
 			isa = PBXGroup;
 			children = (
-				06FD49121C895F8500DF16FB /* utils */,
+				06806D5D1C8A83C600A4D6D6 /* Model */,
+				06FD49121C895F8500DF16FB /* Utils */,
 				06FD48FE1C8938DF00DF16FB /* AppDelegate.h */,
 				06FD48FF1C8938DF00DF16FB /* AppDelegate.m */,
 				06FD49011C8938DF00DF16FB /* ViewController.h */,
@@ -83,16 +110,18 @@
 				06FD49091C8938DF00DF16FB /* LaunchScreen.storyboard */,
 				06FD490C1C8938DF00DF16FB /* Info.plist */,
 				06FD48FC1C8938DF00DF16FB /* main.m */,
+				06806D661C8A8C5A00A4D6D6 /* MyFrameworkPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		06FD49121C895F8500DF16FB /* utils */ = {
+		06FD49121C895F8500DF16FB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				06FD49171C896B5600DF16FB /* RequestUtil */,
 				06FD49131C895F8500DF16FB /* FMDBUtil */,
 			);
+			name = Utils;
 			path = utils;
 			sourceTree = "<group>";
 		};
@@ -252,7 +281,9 @@
 				06FD49161C895FA500DF16FB /* FMDBManager.m in Sources */,
 				06FD49031C8938DF00DF16FB /* ViewController.m in Sources */,
 				06FD49001C8938DF00DF16FB /* AppDelegate.m in Sources */,
+				06806D611C8A83E500A4D6D6 /* UserInfo.m in Sources */,
 				06FD48FD1C8938DF00DF16FB /* main.m in Sources */,
+				06806D641C8A842B00A4D6D6 /* UserInfoDao.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +386,8 @@
 			baseConfigurationReference = 9AF9DB1BD8029AAD81932F6A /* Pods-MyFramework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/MyFramework/MyFrameworkPrefixHeader.pch";
 				INFOPLIST_FILE = MyFramework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -368,6 +401,8 @@
 			baseConfigurationReference = 13BEB8CCDB9DA45E1AD42AC5 /* Pods-MyFramework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/MyFramework/MyFrameworkPrefixHeader.pch";
 				INFOPLIST_FILE = MyFramework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
