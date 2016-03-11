@@ -1,24 +1,23 @@
 //
-//  ViewController.m
+//  AddUserViewController.m
 //  MyFramework
 //
-//  Created by dengtao on 16/3/4.
+//  Created by dengtao on 16/3/9.
 //  Copyright © 2016年 dt. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "FMDBManager.h"
+#import "AddUserViewController.h"
 #import "UserInfoDao.h"
 #import "UserInfo.h"
 
-@interface ViewController ()
+@interface AddUserViewController ()
 {
     UITextField *usernameTextField;
     UITextField *ageTextField;
 }
 @end
 
-@implementation ViewController
+@implementation AddUserViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,10 +49,17 @@
     userInfo.username = usernameTextField.text;
     userInfo.age = [ageTextField.text integerValue];
     
-    if ([UserInfoDao insertUserInfo:userInfo]) {
+    if ([[UserInfoDao shareInstance] insertUserInfo:userInfo]) {
         NSLog(@"保存成功");
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"UserInfoAdded" object:<#(nullable id)#> userInfo:<#(nullable NSDictionary *)#>];
+        [self.navigationController popViewControllerAnimated:YES];
     } else {
         NSLog(@"保存失败");
     }
 }
+
 @end
+
+
+
+

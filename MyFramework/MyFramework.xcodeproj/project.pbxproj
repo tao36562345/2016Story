@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06282ECE1C901251005C8409 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06282ECD1C901251005C8409 /* SuperViewController.m */; };
+		06282ED11C901821005C8409 /* AddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06282ED01C901820005C8409 /* AddUserViewController.m */; };
 		06806D611C8A83E500A4D6D6 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 06806D601C8A83E400A4D6D6 /* UserInfo.m */; };
 		06806D641C8A842B00A4D6D6 /* UserInfoDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 06806D631C8A842B00A4D6D6 /* UserInfoDao.m */; };
 		06AD74E11C8D71B700C1F66B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AD74E01C8D71B700C1F66B /* MainViewController.m */; };
@@ -127,7 +129,6 @@
 		06AD75DB1C8D76F800C1F66B /* tabbarSelectBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06AD756B1C8D76F800C1F66B /* tabbarSelectBg@2x.png */; };
 		06FD48FD1C8938DF00DF16FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD48FC1C8938DF00DF16FB /* main.m */; };
 		06FD49001C8938DF00DF16FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD48FF1C8938DF00DF16FB /* AppDelegate.m */; };
-		06FD49031C8938DF00DF16FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD49021C8938DF00DF16FB /* ViewController.m */; };
 		06FD49081C8938DF00DF16FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FD49071C8938DF00DF16FB /* Assets.xcassets */; };
 		06FD490B1C8938DF00DF16FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06FD49091C8938DF00DF16FB /* LaunchScreen.storyboard */; };
 		06FD49161C895FA500DF16FB /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FD49151C895FA500DF16FB /* FMDBManager.m */; };
@@ -135,6 +136,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06282ECC1C901251005C8409 /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
+		06282ECD1C901251005C8409 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
+		06282ED01C901820005C8409 /* AddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUserViewController.m; sourceTree = "<group>"; };
+		06282ED21C901B41005C8409 /* AddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUserViewController.h; sourceTree = "<group>"; };
 		06806D5F1C8A83E400A4D6D6 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		06806D601C8A83E400A4D6D6 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		06806D621C8A842B00A4D6D6 /* UserInfoDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoDao.h; sourceTree = "<group>"; };
@@ -264,8 +269,6 @@
 		06FD48FC1C8938DF00DF16FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		06FD48FE1C8938DF00DF16FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06FD48FF1C8938DF00DF16FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		06FD49011C8938DF00DF16FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		06FD49021C8938DF00DF16FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		06FD49071C8938DF00DF16FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06FD490A1C8938DF00DF16FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06FD490C1C8938DF00DF16FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -313,6 +316,8 @@
 				06AD74E31C8D723300C1F66B /* FirstViewController */,
 				06AD74E41C8D723300C1F66B /* SecondViewController */,
 				06AD74E51C8D723300C1F66B /* ThirdViewController */,
+				06282ECC1C901251005C8409 /* SuperViewController.h */,
+				06282ECD1C901251005C8409 /* SuperViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -322,6 +327,8 @@
 			children = (
 				06AD74E61C8D724B00C1F66B /* FirstViewController.h */,
 				06AD74E71C8D724B00C1F66B /* FirstViewController.m */,
+				06282ED21C901B41005C8409 /* AddUserViewController.h */,
+				06282ED01C901820005C8409 /* AddUserViewController.m */,
 			);
 			path = FirstViewController;
 			sourceTree = "<group>";
@@ -585,8 +592,6 @@
 				06FD49121C895F8500DF16FB /* Utils */,
 				06FD48FE1C8938DF00DF16FB /* AppDelegate.h */,
 				06FD48FF1C8938DF00DF16FB /* AppDelegate.m */,
-				06FD49011C8938DF00DF16FB /* ViewController.h */,
-				06FD49021C8938DF00DF16FB /* ViewController.m */,
 				06AD74DF1C8D71B700C1F66B /* MainViewController.h */,
 				06AD74E01C8D71B700C1F66B /* MainViewController.m */,
 				06FD48FB1C8938DF00DF16FB /* Supporting Files */,
@@ -882,10 +887,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06282ECE1C901251005C8409 /* SuperViewController.m in Sources */,
 				06AD74EB1C8D725F00C1F66B /* SecondViewController.m in Sources */,
 				06FD49161C895FA500DF16FB /* FMDBManager.m in Sources */,
-				06FD49031C8938DF00DF16FB /* ViewController.m in Sources */,
 				06FD49001C8938DF00DF16FB /* AppDelegate.m in Sources */,
+				06282ED11C901821005C8409 /* AddUserViewController.m in Sources */,
 				06806D611C8A83E500A4D6D6 /* UserInfo.m in Sources */,
 				06AD74E11C8D71B700C1F66B /* MainViewController.m in Sources */,
 				06AD74EE1C8D726F00C1F66B /* ThirdViewController.m in Sources */,

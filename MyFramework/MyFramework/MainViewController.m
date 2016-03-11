@@ -41,6 +41,7 @@
     fvc.tabBarItem.badgeValue = @"3";
     [self unSelectedTapTabBarItems:fvc.tabBarItem];
     [self selectedTapTabBarItems:fvc.tabBarItem];
+    UINavigationController *fnvc = [[UINavigationController alloc] initWithRootViewController:fvc];
     
     SecondViewController *svc = [SecondViewController new];
     svc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Second"
@@ -58,7 +59,7 @@
     [self unSelectedTapTabBarItems:tvc.tabBarItem];
     [self selectedTapTabBarItems:tvc.tabBarItem];
     
-    self.viewControllers = @[fvc, svc, tvc];
+    self.viewControllers = @[fnvc, svc, tvc];
     self.selectedIndex = 0;
 }
 

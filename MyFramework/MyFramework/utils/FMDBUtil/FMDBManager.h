@@ -13,6 +13,7 @@
 + (instancetype)shareInstance;
 
 - (BOOL)executeUpdate:(NSString *)sql;
-
 - (BOOL)executeUpdate:(NSString *)sql withArgumentsInArray:(NSArray *)params;
+
+- (NSArray *)executeQuery:(NSString *)sql;
 @end

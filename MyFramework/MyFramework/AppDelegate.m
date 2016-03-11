@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import "MainViewController.h"
 
 @interface AppDelegate ()
@@ -23,9 +22,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0) {
-        [[UINavigationBar appearance] setBarTintColor:RGBACOLOR(30, 167, 252, 1)];
+        [[UINavigationBar appearance] setBarTintColor:RGBACOLOR(130, 167, 252, 1)];
         [[UINavigationBar appearance] setTitleTextAttributes:
-         [NSDictionary dictionaryWithObjectsAndKeys:RGBACOLOR(245, 245, 245, 1), NSForegroundColorAttributeName, [UIFont fontWithName:@ "HelveticaNeue-CondensedBlack" size:21.0], NSFontAttributeName, nil]];
+         [NSDictionary dictionaryWithObjectsAndKeys:RGBACOLOR(245, 245, 245, 1), NSForegroundColorAttributeName, [UIFont fontWithName:@ "HelveticaNeue-CondensedBlack" size:20.0], NSFontAttributeName, nil]];
     }
     
     MainViewController *mainVC = [[MainViewController alloc] init];

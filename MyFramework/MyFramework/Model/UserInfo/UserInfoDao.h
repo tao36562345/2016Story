@@ -12,8 +12,9 @@
 
 @interface UserInfoDao : NSObject
 
-+ (BOOL)createTable;
++ (instancetype)shareInstance;
 
-+ (BOOL)insertUserInfo:(UserInfo *)userInfo;
+- (BOOL)insertUserInfo:(UserInfo *)userInfo;
+- (NSArray *)allUsers;
 
 @end
