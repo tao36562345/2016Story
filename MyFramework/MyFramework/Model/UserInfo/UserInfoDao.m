@@ -71,7 +71,8 @@ static UserInfoDao *userInfoDao;
     for (NSDictionary *tempDic in resultArray) {
         UserInfo *userInfo = [[UserInfo alloc] init];
         userInfo.username = [tempDic objectForKey:USER_NAME];
-        userInfo.age = (NSUInteger)[tempDic objectForKey:USER_AGE];
+        NSNumber *age = (NSNumber *)[tempDic objectForKey:USER_AGE];
+        userInfo.age = [age integerValue];
         [users addObject:userInfo];
     }
     return [users copy];

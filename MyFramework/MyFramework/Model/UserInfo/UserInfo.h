@@ -11,6 +11,6 @@
 @interface UserInfo : NSObject
 
 @property (nonatomic, copy) NSString *username;
-@property (nonatomic, assign) NSUInteger age;
+@property (nonatomic, assign) NSInteger age;
 
 @end

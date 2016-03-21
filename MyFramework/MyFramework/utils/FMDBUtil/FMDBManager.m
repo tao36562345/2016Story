@@ -65,15 +65,18 @@ static FMDBManager *manager = nil;
 - (NSArray *)executeQuery:(NSString *)sql
 {
     NSMutableArray *resultMutableArray = [NSMutableArray new];
-    if ([db open]) {
+    if ([db open])
+    {
         FMResultSet *resultSet = [db executeQuery:sql];
-        if (resultSet) {
-            while ([resultSet next]) {
+        if (resultSet)
+        {
+            while ([resultSet next])
+            {
                 [resultMutableArray addObject:[resultSet resultDictionary]];
             }
-            
             [db close];
-        } else {
+        } else
+        {
             NSLog(@"database error: ===========>%d%@", [db lastErrorCode], [db lastErrorMessage]);
         }
     }

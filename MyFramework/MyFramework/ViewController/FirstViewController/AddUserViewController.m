@@ -51,7 +51,6 @@
     
     if ([[UserInfoDao shareInstance] insertUserInfo:userInfo]) {
         NSLog(@"保存成功");
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"UserInfoAdded" object:<#(nullable id)#> userInfo:<#(nullable NSDictionary *)#>];
         [self.navigationController popViewControllerAnimated:YES];
     } else {
         NSLog(@"保存失败");
