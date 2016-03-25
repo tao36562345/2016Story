@@ -11,12 +11,5 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, strong) UIButton *playButton;
-@property (nonatomic, strong) UIButton *stopButton;
-@property (nonatomic, strong) UIButton *recordButton;
-
-@property (nonatomic, strong) AVAudioRecorder *audioRecorder;
-@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
-
 @end
 

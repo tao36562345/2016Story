@@ -13,6 +13,24 @@
 		064AC21C1CA38E1F0083EC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064AC21B1CA38E1F0083EC70 /* Assets.xcassets */; };
 		064AC21F1CA38E1F0083EC70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064AC21D1CA38E1F0083EC70 /* LaunchScreen.storyboard */; };
 		064AC2271CA38F000083EC70 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064AC2261CA38F000083EC70 /* AVFoundation.framework */; };
+		06DE96401CA5216300799FA8 /* RecordingBkg.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE962E1CA5216300799FA8 /* RecordingBkg.png */; };
+		06DE96411CA5216300799FA8 /* RecordingBkg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE962F1CA5216300799FA8 /* RecordingBkg@2x.png */; };
+		06DE96421CA5216300799FA8 /* RecordingSignal001.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE96301CA5216300799FA8 /* RecordingSignal001.png */; };
+		06DE96431CA5216300799FA8 /* RecordingSignal001@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE96311CA5216300799FA8 /* RecordingSignal001@2x.png */; };
+		06DE96441CA5216300799FA8 /* RecordingSignal002.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE96321CA5216300799FA8 /* RecordingSignal002.png */; };
+		06DE96451CA5216300799FA8 /* RecordingSignal002@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE96331CA5216300799FA8 /* RecordingSignal002@2x.png */; };
+		06DE96461CA5216300799FA8 /* RecordingSignal003.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE96341CA5216300799FA8 /* RecordingSignal003.png */; };
+		06DE96471CA5216300799FA8 /* RecordingSignal003@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE96351CA5216300799FA8 /* RecordingSignal003@2x.png */; };
+		06DE96481CA5216300799FA8 /* RecordingSignal004.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE96361CA5216300799FA8 /* RecordingSignal004.png */; };
+		06DE96491CA5216300799FA8 /* RecordingSignal004@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE96371CA5216300799FA8 /* RecordingSignal004@2x.png */; };
+		06DE964A1CA5216300799FA8 /* RecordingSignal005.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE96381CA5216300799FA8 /* RecordingSignal005.png */; };
+		06DE964B1CA5216300799FA8 /* RecordingSignal005@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE96391CA5216300799FA8 /* RecordingSignal005@2x.png */; };
+		06DE964C1CA5216300799FA8 /* RecordingSignal006.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE963A1CA5216300799FA8 /* RecordingSignal006.png */; };
+		06DE964D1CA5216300799FA8 /* RecordingSignal006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE963B1CA5216300799FA8 /* RecordingSignal006@2x.png */; };
+		06DE964E1CA5216300799FA8 /* RecordingSignal007.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE963C1CA5216300799FA8 /* RecordingSignal007.png */; };
+		06DE964F1CA5216300799FA8 /* RecordingSignal007@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE963D1CA5216300799FA8 /* RecordingSignal007@2x.png */; };
+		06DE96501CA5216300799FA8 /* RecordingSignal008.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE963E1CA5216300799FA8 /* RecordingSignal008.png */; };
+		06DE96511CA5216300799FA8 /* RecordingSignal008@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE963F1CA5216300799FA8 /* RecordingSignal008@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +44,24 @@
 		064AC21E1CA38E1F0083EC70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		064AC2201CA38E1F0083EC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		064AC2261CA38F000083EC70 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		06DE962E1CA5216300799FA8 /* RecordingBkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingBkg.png; sourceTree = "<group>"; };
+		06DE962F1CA5216300799FA8 /* RecordingBkg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingBkg@2x.png"; sourceTree = "<group>"; };
+		06DE96301CA5216300799FA8 /* RecordingSignal001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal001.png; sourceTree = "<group>"; };
+		06DE96311CA5216300799FA8 /* RecordingSignal001@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal001@2x.png"; sourceTree = "<group>"; };
+		06DE96321CA5216300799FA8 /* RecordingSignal002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal002.png; sourceTree = "<group>"; };
+		06DE96331CA5216300799FA8 /* RecordingSignal002@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal002@2x.png"; sourceTree = "<group>"; };
+		06DE96341CA5216300799FA8 /* RecordingSignal003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal003.png; sourceTree = "<group>"; };
+		06DE96351CA5216300799FA8 /* RecordingSignal003@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal003@2x.png"; sourceTree = "<group>"; };
+		06DE96361CA5216300799FA8 /* RecordingSignal004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal004.png; sourceTree = "<group>"; };
+		06DE96371CA5216300799FA8 /* RecordingSignal004@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal004@2x.png"; sourceTree = "<group>"; };
+		06DE96381CA5216300799FA8 /* RecordingSignal005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal005.png; sourceTree = "<group>"; };
+		06DE96391CA5216300799FA8 /* RecordingSignal005@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal005@2x.png"; sourceTree = "<group>"; };
+		06DE963A1CA5216300799FA8 /* RecordingSignal006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal006.png; sourceTree = "<group>"; };
+		06DE963B1CA5216300799FA8 /* RecordingSignal006@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal006@2x.png"; sourceTree = "<group>"; };
+		06DE963C1CA5216300799FA8 /* RecordingSignal007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal007.png; sourceTree = "<group>"; };
+		06DE963D1CA5216300799FA8 /* RecordingSignal007@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal007@2x.png"; sourceTree = "<group>"; };
+		06DE963E1CA5216300799FA8 /* RecordingSignal008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingSignal008.png; sourceTree = "<group>"; };
+		06DE963F1CA5216300799FA8 /* RecordingSignal008@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal008@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +100,7 @@
 				064AC2131CA38E1F0083EC70 /* AppDelegate.m */,
 				064AC2151CA38E1F0083EC70 /* ViewController.h */,
 				064AC2161CA38E1F0083EC70 /* ViewController.m */,
+				06DE962D1CA5216300799FA8 /* images */,
 				064AC21B1CA38E1F0083EC70 /* Assets.xcassets */,
 				064AC21D1CA38E1F0083EC70 /* LaunchScreen.storyboard */,
 				064AC2201CA38E1F0083EC70 /* Info.plist */,
@@ -78,6 +115,31 @@
 				064AC2101CA38E1F0083EC70 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06DE962D1CA5216300799FA8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				06DE962E1CA5216300799FA8 /* RecordingBkg.png */,
+				06DE962F1CA5216300799FA8 /* RecordingBkg@2x.png */,
+				06DE96301CA5216300799FA8 /* RecordingSignal001.png */,
+				06DE96311CA5216300799FA8 /* RecordingSignal001@2x.png */,
+				06DE96321CA5216300799FA8 /* RecordingSignal002.png */,
+				06DE96331CA5216300799FA8 /* RecordingSignal002@2x.png */,
+				06DE96341CA5216300799FA8 /* RecordingSignal003.png */,
+				06DE96351CA5216300799FA8 /* RecordingSignal003@2x.png */,
+				06DE96361CA5216300799FA8 /* RecordingSignal004.png */,
+				06DE96371CA5216300799FA8 /* RecordingSignal004@2x.png */,
+				06DE96381CA5216300799FA8 /* RecordingSignal005.png */,
+				06DE96391CA5216300799FA8 /* RecordingSignal005@2x.png */,
+				06DE963A1CA5216300799FA8 /* RecordingSignal006.png */,
+				06DE963B1CA5216300799FA8 /* RecordingSignal006@2x.png */,
+				06DE963C1CA5216300799FA8 /* RecordingSignal007.png */,
+				06DE963D1CA5216300799FA8 /* RecordingSignal007@2x.png */,
+				06DE963E1CA5216300799FA8 /* RecordingSignal008.png */,
+				06DE963F1CA5216300799FA8 /* RecordingSignal008@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +200,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06DE964E1CA5216300799FA8 /* RecordingSignal007.png in Resources */,
+				06DE96501CA5216300799FA8 /* RecordingSignal008.png in Resources */,
+				06DE964A1CA5216300799FA8 /* RecordingSignal005.png in Resources */,
 				064AC21F1CA38E1F0083EC70 /* LaunchScreen.storyboard in Resources */,
+				06DE96491CA5216300799FA8 /* RecordingSignal004@2x.png in Resources */,
+				06DE96511CA5216300799FA8 /* RecordingSignal008@2x.png in Resources */,
+				06DE964F1CA5216300799FA8 /* RecordingSignal007@2x.png in Resources */,
+				06DE96481CA5216300799FA8 /* RecordingSignal004.png in Resources */,
+				06DE964C1CA5216300799FA8 /* RecordingSignal006.png in Resources */,
+				06DE96411CA5216300799FA8 /* RecordingBkg@2x.png in Resources */,
+				06DE96471CA5216300799FA8 /* RecordingSignal003@2x.png in Resources */,
+				06DE964D1CA5216300799FA8 /* RecordingSignal006@2x.png in Resources */,
+				06DE96431CA5216300799FA8 /* RecordingSignal001@2x.png in Resources */,
+				06DE96451CA5216300799FA8 /* RecordingSignal002@2x.png in Resources */,
+				06DE96401CA5216300799FA8 /* RecordingBkg.png in Resources */,
 				064AC21C1CA38E1F0083EC70 /* Assets.xcassets in Resources */,
+				06DE964B1CA5216300799FA8 /* RecordingSignal005@2x.png in Resources */,
+				06DE96421CA5216300799FA8 /* RecordingSignal001.png in Resources */,
+				06DE96461CA5216300799FA8 /* RecordingSignal003.png in Resources */,
+				06DE96441CA5216300799FA8 /* RecordingSignal002.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +375,7 @@
 				064AC2251CA38E1F0083EC70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
