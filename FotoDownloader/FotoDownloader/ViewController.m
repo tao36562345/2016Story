@@ -88,7 +88,7 @@
     // Create a file name based on timestamp
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"ddmmyyyy-HHmmssSSS"];
-    return [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png", [formatter stringFromDate:[NSDate date]]]];
+    return [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg", [formatter stringFromDate:[NSDate date]]]];
 }
 
 - (void)stopReceiveWithStatus:(NSString *)statusString
