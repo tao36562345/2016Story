@@ -42,6 +42,40 @@ static PDHttpTool *_instance;
     return _instance;
 }
 
+- (void)monitorNetworkStatus
+{
+    AFNetworkReachabilityManager *mgr = [AFNetworkReachabilityManager sharedManager];
+    [mgr setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        // 当网络状态改变了, 就会调用这个block
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown: // 未知网络
+                NSLog(@"未知网络");
+                self.networkStatus = NetworkStatusUnknown;
+                break;
+            case AFNetworkReachabilityStatusNotReachable: // 没有网络(断网)
+                NSLog(@"没有网络(断网)");
+                self.networkStatus = NetworkStatusNotReachable;
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWWAN: // 手机自带网络
+                NSLog(@"手机自带网络");
+                self.networkStatus = NetworkStatusReachableViaWWAN;
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWiFi: // WIFI
+                NSLog(@"WIFI");
+                self.networkStatus = NetworkStatusReachableViaWiFi;
+                break;
+        }
+    }];
+    [mgr startMonitoring];
+}
+
+- (BOOL)isNetworkAvailable
+{
+    return [AFNetworkReachabilityManager sharedManager].isReachable;
+}
+
 #pragma mark - 发送请求方法
 - (void)request:(PDHTTPMethod)method
       urlString:(NSString *)urlString

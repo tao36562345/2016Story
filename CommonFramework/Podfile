@@ -11,4 +11,5 @@ target 'CommonFramework' do
     pod 'DateTools'
     pod 'Mantle'
     pod 'MTLFMDBAdapter'
+    pod 'Masonry'
 end

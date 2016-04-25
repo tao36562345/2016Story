@@ -13,6 +13,8 @@
 
 + (instancetype)shareInstance;
 
+- (void)createTables:(NSArray *)classNameArray;
+
 /**
  执行增、删、改操作语句
  @param sql 需要执行的操作语句

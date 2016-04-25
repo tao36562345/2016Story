@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "FMDBManager.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,16 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[RootViewController alloc] init];
     [self.window makeKeyAndVisible];
+    
+    /*------------初始化数据库，并创建需要的表--------------*/
+    FMDBManager *manager = [FMDBManager shareInstance];
+    // 需要创建对应表的类名数组，根据提供的类名调用类中的createTable方法创建对应的表。
+    NSArray *tableNameArray = @[@"TestModel"];
+    [manager createTables:tableNameArray];
+    /*------------初始化数据库，并创建需要的表--------------*/
+    
+    // 开始监听网络状态
+    [[PDHttpTool sharedHttpTool] monitorNetworkStatus];
     return YES;
 }
 

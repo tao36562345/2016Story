@@ -7,16 +7,17 @@
 //
 
 #import "TestModel.h"
+#import "FMDBManager.h"
 
-//CommonFramework[16049:189587] {
-//    appid = wxb4ba3c02aa476ea1;
-//    noncestr = 00e269b14f48df33fb74bb20b156ad38;
-//    package = "Sign=WXPay";
-//    partnerid = 10000100;
-//    prepayid = wx2016032915024033dd957fcf0004796715;
-//    sign = 2E407BFBF61C94C83E31E78403D9D411;
-//    timestamp = 1459234960;
-//}
+#define TEST_MODEL_TABLE @"TEST_MODEL_TABLE"
+#define TEST_MODEL_TABLE_ID @"testModelID"
+#define APPID @"appid"
+#define NONCESTR @"noncestr"
+#define PACKAGE @"package"
+#define PARTNERID @"partnerid"
+#define PREPAYID @"prepayid"
+#define SIGN @"sign"
+#define TIME @"time"
 
 @implementation TestModel
 
@@ -53,5 +54,14 @@
 
 + (NSString *)FMDBTableName {
     return @"TEST_MODEL_TABLE";
+}
+
+#pragma mark - DatabaseModelProtocol
+// 创建用户信息表
+- (void)createTable
+{
+    NSString *createTableSql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@'('%@' TEXT PRIMARY KEY, '%@' TEXT, '%@' TEXT, '%@' TEXT, '%@' TEXT, '%@' TEXT, '%@' TEXT, '%@' TEXT)", TEST_MODEL_TABLE, TEST_MODEL_TABLE_ID, APPID, NONCESTR, PACKAGE, PARTNERID, PREPAYID, SIGN, TIME];
+    BOOL flag = [[FMDBManager shareInstance] executeUpdate:createTableSql];
+    NSLog(flag ? @"用户信息表创建成功" : @"用户信息表创建失败");
 }
 @end

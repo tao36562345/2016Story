@@ -8,6 +8,7 @@
 
 #import "FMDBManager.h"
 #import "MTLFMDBAdapter.h"
+#import <objc/runtime.h>
 
 @interface FMDBManager()
 {
@@ -40,6 +41,23 @@ static FMDBManager *manager = nil;
         db = [[FMDatabase alloc] initWithPath:dbpath];
     }
     return self;
+}
+
+- (void)createTables:(NSArray *)classNameArray
+{
+    NSString *requiredMethod = @"createTable";
+    for (NSString *className in classNameArray)
+    {
+        Class cla = NSClassFromString(className);
+        NSAssert(cla != nil, @"缺少类：%@", className);
+        SEL sel = NSSelectorFromString(requiredMethod);
+        
+        NSString *errorMessage = [NSString stringWithFormat:@"%@中缺少%@方法", className, requiredMethod];
+        NSAssert(class_respondsToSelector(cla, sel), errorMessage);
+        
+        IMP imp = class_getMethodImplementation(cla, sel);
+        imp();
+    }
 }
 
 - (BOOL)executeUpdate:(NSString *)sql

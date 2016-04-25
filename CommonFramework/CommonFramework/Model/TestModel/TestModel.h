@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "SuperModel.h"
+#import "DatabaseModelProtocol.h"
 
-@interface TestModel : SuperModel
+@interface TestModel : SuperModel<DatabaseModelProtocol>
 
 @property (nonatomic, copy) NSString *testModelID;
 @property (nonatomic, copy) NSString *appid;

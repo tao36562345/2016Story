@@ -15,6 +15,8 @@
 		061E06F21CAB682500CD2380 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061E06F11CAB682500CD2380 /* ThirdViewController.m */; };
 		061E06F51CAB683400CD2380 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061E06F41CAB683400CD2380 /* FourthViewController.m */; };
 		061E06F81CAB691F00CD2380 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061E06F71CAB691F00CD2380 /* SuperViewController.m */; };
+		063911C31CB49E640020625C /* NetworkStatusDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 063911BF1CB49E640020625C /* NetworkStatusDetector.m */; };
+		063911C41CB49E640020625C /* StateBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 063911C21CB49E640020625C /* StateBarView.m */; };
 		063DD8EC1CA8C4BF0019F504 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 063DD8EB1CA8C4BF0019F504 /* main.m */; };
 		063DD8EF1CA8C4BF0019F504 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 063DD8EE1CA8C4BF0019F504 /* AppDelegate.m */; };
 		063DD8F21CA8C4BF0019F504 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063DD8F11CA8C4BF0019F504 /* ViewController.m */; };
@@ -24,7 +26,6 @@
 		063DD9391CA90B780019F504 /* PhoneNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 063DD9381CA90B780019F504 /* PhoneNotification.m */; };
 		063DD9411CAA0FAA0019F504 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 063DD9401CAA0FAA0019F504 /* NSString+Extensions.m */; };
 		063DD9451CAA0FD90019F504 /* PDHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 063DD9441CAA0FD90019F504 /* PDHttpTool.m */; };
-		068BB0551CAE089100ECB95C /* TestModelDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 068BB0541CAE089100ECB95C /* TestModelDao.m */; };
 		06FE92E41CACB60C00D409A5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FE92DF1CACB60C00D409A5 /* LoginViewController.m */; };
 		06FE92E51CACB60C00D409A5 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FE92E11CACB60C00D409A5 /* RegistViewController.m */; };
 		06FE92E61CACB60C00D409A5 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FE92E31CACB60C00D409A5 /* ResetPasswordViewController.m */; };
@@ -51,6 +52,10 @@
 		061E06F41CAB683400CD2380 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		061E06F61CAB691F00CD2380 /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
 		061E06F71CAB691F00CD2380 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
+		063911BE1CB49E640020625C /* NetworkStatusDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkStatusDetector.h; sourceTree = "<group>"; };
+		063911BF1CB49E640020625C /* NetworkStatusDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkStatusDetector.m; sourceTree = "<group>"; };
+		063911C11CB49E640020625C /* StateBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateBarView.h; sourceTree = "<group>"; };
+		063911C21CB49E640020625C /* StateBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateBarView.m; sourceTree = "<group>"; };
 		063DD8E71CA8C4BF0019F504 /* CommonFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063DD8EB1CA8C4BF0019F504 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		063DD8ED1CA8C4BF0019F504 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,8 +74,7 @@
 		063DD9401CAA0FAA0019F504 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
 		063DD9431CAA0FD90019F504 /* PDHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDHttpTool.h; sourceTree = "<group>"; };
 		063DD9441CAA0FD90019F504 /* PDHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDHttpTool.m; sourceTree = "<group>"; };
-		068BB0531CAE089100ECB95C /* TestModelDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModelDao.h; sourceTree = "<group>"; };
-		068BB0541CAE089100ECB95C /* TestModelDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModelDao.m; sourceTree = "<group>"; };
+		069214661CB36459003A6DAB /* DatabaseModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseModelProtocol.h; sourceTree = "<group>"; };
 		06FE92DE1CACB60C00D409A5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		06FE92DF1CACB60C00D409A5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		06FE92E01CACB60C00D409A5 /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
@@ -105,8 +109,6 @@
 			children = (
 				061E06E01CAA717400CD2380 /* TestModel.h */,
 				061E06E11CAA717400CD2380 /* TestModel.m */,
-				068BB0531CAE089100ECB95C /* TestModelDao.h */,
-				068BB0541CAE089100ECB95C /* TestModelDao.m */,
 			);
 			path = TestModel;
 			sourceTree = "<group>";
@@ -164,6 +166,24 @@
 			name = test;
 			sourceTree = "<group>";
 		};
+		063911BD1CB49E640020625C /* NetworkStatus */ = {
+			isa = PBXGroup;
+			children = (
+				063911BE1CB49E640020625C /* NetworkStatusDetector.h */,
+				063911BF1CB49E640020625C /* NetworkStatusDetector.m */,
+			);
+			path = NetworkStatus;
+			sourceTree = "<group>";
+		};
+		063911C01CB49E640020625C /* StateBarView */ = {
+			isa = PBXGroup;
+			children = (
+				063911C11CB49E640020625C /* StateBarView.h */,
+				063911C21CB49E640020625C /* StateBarView.m */,
+			);
+			path = StateBarView;
+			sourceTree = "<group>";
+		};
 		063DD8DE1CA8C4BF0019F504 = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +233,7 @@
 				061E06FA1CABAA7200CD2380 /* test */,
 				061E06DC1CAA704500CD2380 /* SuperModel.h */,
 				061E06DD1CAA704500CD2380 /* SuperModel.m */,
+				069214661CB36459003A6DAB /* DatabaseModelProtocol.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,6 +258,8 @@
 		063DD90A1CA8DAE50019F504 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				063911BD1CB49E640020625C /* NetworkStatus */,
+				063911C01CB49E640020625C /* StateBarView */,
 				06FE93161CAD158000D409A5 /* EzJsonParser */,
 				063DD9421CAA0FD90019F504 /* PDHttpTool */,
 				063DD93E1CAA0FAA0019F504 /* Category */,
@@ -456,13 +479,14 @@
 			files = (
 				061E06EF1CAB681500CD2380 /* SecondViewController.m in Sources */,
 				061E06DE1CAA704500CD2380 /* SuperModel.m in Sources */,
-				068BB0551CAE089100ECB95C /* TestModelDao.m in Sources */,
 				06FE93191CAD15AF00D409A5 /* EzJsonParser.m in Sources */,
+				063911C41CB49E640020625C /* StateBarView.m in Sources */,
 				063DD8F21CA8C4BF0019F504 /* ViewController.m in Sources */,
 				061E06F51CAB683400CD2380 /* FourthViewController.m in Sources */,
 				061E06E21CAA717400CD2380 /* TestModel.m in Sources */,
 				063DD90E1CA8DAFB0019F504 /* FMDBManager.m in Sources */,
 				06FE92E61CACB60C00D409A5 /* ResetPasswordViewController.m in Sources */,
+				063911C31CB49E640020625C /* NetworkStatusDetector.m in Sources */,
 				063DD9411CAA0FAA0019F504 /* NSString+Extensions.m in Sources */,
 				063DD8EF1CA8C4BF0019F504 /* AppDelegate.m in Sources */,
 				061E06F21CAB682500CD2380 /* ThirdViewController.m in Sources */,

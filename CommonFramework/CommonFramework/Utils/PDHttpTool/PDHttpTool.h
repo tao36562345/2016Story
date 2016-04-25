@@ -15,13 +15,34 @@ typedef enum : NSUInteger{
     POST
 } PDHTTPMethod;
 
+typedef NS_ENUM(NSInteger, NetworkStatus) {
+    NetworkStatusUnknown          = -1,
+    NetworkStatusNotReachable     = 0,
+    NetworkStatusReachableViaWWAN = 1,
+    NetworkStatusReachableViaWiFi = 2,
+};
+
 /// 定义回调block的别名
 typedef void(^PDFinished)(id result, NSError *error);
 
 @interface PDHttpTool : AFHTTPSessionManager
 
+// 网络状态
+@property (nonatomic, assign) NetworkStatus networkStatus;
+
 /// 单例方法
 + (instancetype)sharedHttpTool;
+
+/*
+ * 开始监听网络
+ */
+- (void)monitorNetworkStatus;
+
+/*
+ * 网络是否可用
+ * @return YES：网络连接正常 NO：断网
+ */
+- (BOOL)isNetworkAvailable;
 
 /**
  *  封装AFN请求方法

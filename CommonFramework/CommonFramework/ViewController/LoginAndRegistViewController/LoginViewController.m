@@ -51,6 +51,9 @@
     
     // 加载子视图
     [self loadSubViews];
+    
+    NSLog(@"网络状态%ld", [PDHttpTool sharedHttpTool].networkStatus);
+    NSLog(@"网络是否正常:%@", [[PDHttpTool sharedHttpTool] isNetworkAvailable] ? @"正常" : @"断网");
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -72,63 +75,97 @@
 // 加载子视图
 - (void)loadSubViews
 {
-    UIImageView *accountImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20+5, 100, 18, 21)];
-    accountImageView.image = [UIImage imageNamed:@"account.png"];
-    [self.view addSubview:accountImageView];
+//    UIImageView *accountImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20+5, 100, 18, 21)];
+//    accountImageView.image = [UIImage imageNamed:@"account.png"];
+//    [self.view addSubview:accountImageView];
     
-    _usernameTextField = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMaxX(accountImageView.frame)+15, 100, SCREEN_WIDTH - 80, 30)];
+    _usernameTextField = [[UITextField alloc] init];
     _usernameTextField.delegate = self;
     _usernameTextField.placeholder = @"输入手机号";
-    [_usernameTextField setFont:[UIFont systemFontOfSize:15]];
+    [_usernameTextField setFont:[UIFont systemFontOfSize:SCREEN_WIDTH * 0.046875]];
     _usernameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     _usernameTextField.keyboardType = UIKeyboardTypeNumberPad;
     [self.view addSubview:_usernameTextField];
+    [_usernameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.top).with.offset(SCREEN_WIDTH * 0.3125);
+        make.left.equalTo(self.view.left).with.offset(SCREEN_WIDTH * 0.15625);
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH * 0.6875, 30));
+    }];
     
-    UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(20, CGRectGetMaxY(accountImageView.frame)+17, SCREEN_WIDTH-40, 0.5)];
+    UIView *line1 = [[UIView alloc] init];
     line1.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:line1];
+    [line1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_usernameTextField.bottom).with.offset(10);
+        make.left.equalTo(self.view.left).with.offset(20);
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH - 40, 0.5));
+    }];
     
-    UIImageView *passwordImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20+5, CGRectGetMaxY(line1.frame)+14, 18, 21)];
-    passwordImageView.image = [UIImage imageNamed:@"password.png"];
-    [self.view addSubview:passwordImageView];
+//    UIImageView *passwordImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20+5, CGRectGetMaxY(line1.frame)+14, 18, 21)];
+//    passwordImageView.image = [UIImage imageNamed:@"password.png"];
+//    [self.view addSubview:passwordImageView];
     
-    _passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMaxX(passwordImageView.frame)+15, CGRectGetMidY(passwordImageView.frame)-15, SCREEN_WIDTH - 80, 30)];
+    _passwordTextField = [[UITextField alloc] init];
     _passwordTextField.delegate = self;
     _passwordTextField.placeholder = @"登录密码";
-    _passwordTextField.font = [UIFont systemFontOfSize:15];
+    _passwordTextField.font = [UIFont systemFontOfSize:SCREEN_WIDTH * 0.046875];
     _passwordTextField.keyboardType = UIKeyboardTypeNumberPad;
     _passwordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     _passwordTextField.secureTextEntry = YES;
-    
     [self.view addSubview:_passwordTextField];
+    [_passwordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(line1.bottom).with.offset(10);
+        make.left.equalTo(self.view.left).with.offset(SCREEN_WIDTH * 0.15625);
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH * 0.6875, 30));
+    }];
     
-    UIView *line2 = [[UIView alloc] initWithFrame:CGRectMake(20, CGRectGetMaxY(passwordImageView.frame)+17, SCREEN_WIDTH-40, 0.5)];
+    UIView *line2 = [[UIView alloc] init];
     line2.backgroundColor = [UIColor lightGrayColor];
-    line2.hidden = YES;
+//    line2.hidden = YES;
     [self.view addSubview:line2];
+    [line2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_passwordTextField.bottom).with.offset(10);
+        make.left.equalTo(self.view.left).with.offset(20);
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH - 40, 0.5));
+    }];
     
-    _loginButton = [[UIButton alloc] initWithFrame:CGRectMake(20, CGRectGetMaxY(line2.frame)+18, SCREEN_WIDTH-40, 34)];
+    _loginButton = [[UIButton alloc] init];
     [_loginButton setTitle:@"登录" forState:UIControlStateNormal];
     [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    _loginButton.titleLabel.font = [UIFont systemFontOfSize:15];
+    _loginButton.titleLabel.font = [UIFont systemFontOfSize:SCREEN_WIDTH * 0.046875];
     _loginButton.backgroundColor = [UIColor blueColor];
     _loginButton.layer.cornerRadius = 3.0f;
     [_loginButton addTarget:self action:@selector(doLogin:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_loginButton];
+    [_loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(line2.bottom).with.offset(18);
+        make.left.equalTo(self.view.left).with.offset(20);
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH - 40, SCREEN_WIDTH * 0.10625));
+    }];
     
-    UIButton *findPasswordButton = [[UIButton alloc] initWithFrame:CGRectMake(20, CGRectGetMaxY(_loginButton.frame)+10, 48, 12)];
+    UIButton *findPasswordButton = [[UIButton alloc] init];
     [findPasswordButton setTitle:@"找回密码" forState:UIControlStateNormal];
     [findPasswordButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    findPasswordButton.titleLabel.font = [UIFont systemFontOfSize:12];
+    findPasswordButton.titleLabel.font = [UIFont systemFontOfSize:SCREEN_WIDTH * 0.0375];
     [findPasswordButton addTarget:self action:@selector(toResetPasswordController:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:findPasswordButton];
+    [findPasswordButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_loginButton.bottom).with.offset(10);
+        make.left.equalTo(self.view.left).with.offset(20);
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH * 0.2, SCREEN_WIDTH * 0.0375));
+    }];
     
-    UIButton *toRegistButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_loginButton.frame)-48, CGRectGetMaxY(_loginButton.frame)+10, 48, 12)];
+    UIButton *toRegistButton = [[UIButton alloc] init];
     [toRegistButton setTitle:@"快速注册" forState:UIControlStateNormal];
     [toRegistButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    toRegistButton.titleLabel.font = [UIFont systemFontOfSize:12];
+    toRegistButton.titleLabel.font = [UIFont systemFontOfSize:SCREEN_WIDTH * 0.0375];
     [toRegistButton addTarget:self action:@selector(toRegistController:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:toRegistButton];
+    [toRegistButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_loginButton.bottom).with.offset(10);
+        make.right.equalTo(self.view.right).with.offset(-20);
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH * 0.2, SCREEN_WIDTH * 0.0375));
+    }];
     
 }
 

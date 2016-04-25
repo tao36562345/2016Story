@@ -11,7 +11,6 @@
 #import "TestModel.h"
 #import "MTLFMDBAdapter.h"
 #import "FMDBManager.h"
-#import "TestModelDao.h"
 
 @interface ViewController ()
 {
@@ -64,13 +63,8 @@
                                     
                                     NSDictionary *json = [MTLJSONAdapter JSONDictionaryFromModel:test error:nil];
                                     
-                                    [TestModelDao shareInstance];
                                     TestModel *resultUser = nil;
                                     
-                                    // Create the INSERT statement
-//                                    NSString *stmt = [MTLFMDBAdapter insertStatementForModel:test];
-//                                    NSArray *params = [MTLFMDBAdapter columnValues:test];
-//                                    [[FMDBManager shareInstance] executeUpdate:stmt withArgumentsInArray:params];
                                     test.appid = nil;
                                     test.testModelID = [NSString generateUniqueString:@"TestModel"];
                                     [[FMDBManager shareInstance] insertInstance:test];

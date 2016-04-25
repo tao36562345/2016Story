@@ -9,11 +9,16 @@
 #ifndef CommonFrameworkPrefixHeader_pch
 #define CommonFrameworkPrefixHeader_pch
 
+// If you want to use masonry without all those pesky 'mas_' prefixes. Add #define MAS_SHORTHAND to your prefix.pch before importing Masonry
+#define MAS_SHORTHAND
+
 #import "PhoneNotification.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "DateTools.h"   // 时间工具 http://www.ios122.com/2015/09/datetools/
 #import "SuperViewController.h"
 #import "NSString+Extensions.h"
+#import "PDHttpTool.h"
+#import "Masonry.h"
 
 // 创建颜色
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
@@ -23,6 +28,15 @@
 
 //导航栏底色
 #define TABBARCOLOR_NOR UIColorFromHex(0xf6f1eb)
+
+//白色
+#define WHITE_COLOR [UIColor whiteColor]
+//透明色
+#define CLEAR_COLOR [UIColor clearColor]
+//棕色
+#define  GRAY_COLOR [UIColor grayColor]
+//黑色
+#define  BLACK_COLOR [UIColor blackColor]
 
 // 屏幕尺寸
 #define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
@@ -35,5 +49,9 @@
 #define kSDKPassword   @"password"
 #define kSDKUsername   @"username"
 #define kSDKToken      @"token"
+
+//字体
+#define Font(F) [UIFont systemFontOfSize:(F)]
+#define FontWithNameAndSize(name, asize) [UIFont fontWithName:name size:asize]
 
 #endif /* CommonFrameworkPrefixHeader_pch */
